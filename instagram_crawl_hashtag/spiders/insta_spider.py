@@ -17,17 +17,17 @@ class HadhtagSpider(scrapy.Spider):
         print("search_tag : ", search_tag)
         super(HadhtagSpider, self).__init__(*args, **kwargs)
         self.search_tag = search_tag
-        self.driver = webdriver.Chrome('C:\PycharmProjects\insta_hashtag\insta_hashtag\spiders/chromedriver')
+        self.browser = webdriver.Chrome('C:\PycharmProjects\insta_hashtag\insta_hashtag\spiders/chromedriver')
 
     def start_requests(self):
         url = "https://www.instagram.com/explore/tags/" + self.search_tag+"/"
-        self.driver.get(url)
-        contents = ''
+        self.browser.get(url)
+        self.contents = ''
         yield scrapy.Request(url, self.parse_insta)
 
     def parse_insta(self, response):
         print('######크롤링 시작!######')
-        divs = self.driver.find_elements_by_xpath('//*[@id="react-root"]/section/main/article/div[2]/div/div')
+        divs = self.browser.find_elements_by_xpath('//*[@id="react-root"]/section/main/article/div[2]/div/div')
 
         c = 0
         # while len(divs) < 10:
@@ -61,3 +61,5 @@ class HadhtagSpider(scrapy.Spider):
                     item['hashtag'] = item_
 
                     yield item
+
+        self.browser.close()

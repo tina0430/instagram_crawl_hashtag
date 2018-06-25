@@ -8,13 +8,13 @@
 import json
 
 
-class InstaHashtagPipeline(object):
+class instagramCrawlHashtagPipeline(object):
     def __init__(self):
         self.count = 1
 
     def open_spider(self, spider):
         file_name = 'hashtag_' + str(spider.search_tag) + '.json'
-        file = open(file_name, 'w', encoding='utf-8')
+        self.file = open(file_name, 'w', encoding='utf-8')
         self.file.write('{\n')
 
     def process_item(self, item, spider):

@@ -69,7 +69,7 @@ RANDOMIZE_DOWNLOAD_DELAY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'instagram_crawl_hashtag.pipelines.InstagramCrawlHashtagPipeline': 300,
+   'instagram_crawl_hashtag.pipelines.instagramCrawlHashtagPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -93,7 +93,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-import logging
-
-LOG_FILE = 'logfile.log'
-LOG_LEVEL = logging.ERROR
+# import logging
+#
+# LOG_FILE = 'logfile.log'
+# LOG_LEVEL = logging.ERROR
