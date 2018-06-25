@@ -1,0 +1,27 @@
+2018-06-25 23:44:39 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-06-25 23:44:39 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\misc.py", line 47, in load_object
+    obj = getattr(mod, name)
+AttributeError: module 'instagram_crawl_hashtag.pipelines' has no attribute 'InstagramCrawlHashtagPipeline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\python35\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "c:\python35\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "c:\python35\lib\site-packages\scrapy\core\engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "c:\python35\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "c:\python35\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "c:\python35\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "c:\python35\lib\site-packages\scrapy\utils\misc.py", line 49, in load_object
+    raise NameError("Module '%s' doesn't define any object named '%s'" % (module, name))
+NameError: Module 'instagram_crawl_hashtag.pipelines' doesn't define any object named 'InstagramCrawlHashtagPipeline'
