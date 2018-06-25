@@ -30,7 +30,7 @@ ROBOTSTXT_OBEY = False
 # See also autothrottle settings and docs
 
 DOWNLOAD_DELAY = 1
-RANDOMIZE_DOWNLOAD_DELAY = True
+# RANDOMIZE_DOWNLOAD_DELAY = True
 
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
