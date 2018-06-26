@@ -52,3 +52,44 @@ Traceback (most recent call last):
   File "c:\python35\lib\site-packages\scrapy\utils\misc.py", line 49, in load_object
     raise NameError("Module '%s' doesn't define any object named '%s'" % (module, name))
 NameError: Module 'instagram_crawl_hashtag.pipelines' doesn't define any object named 'InstagramCrawlHashtagPipeline'
+2018-06-26 12:01:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 45, in parse_insta
+    while list == list_ and self.identifier == []:
+UnboundLocalError: local variable 'list' referenced before assignment
+2018-06-26 12:16:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 47, in parse_insta
+    id1 = self.browser.find_element_by_xpath('//body/div[3]/div/div[2]/div/article/header/div[2]/div[1]/div[1]/a').get_attribute('title')
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 387, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 957, in find_element
+    'value': value})['value']
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[3]/div/div[2]/div/article/header/div[2]/div[1]/div[1]/a"}
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+
