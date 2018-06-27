@@ -9,3 +9,4 @@ import scrapy
 
 class InstaHashtagItem(scrapy.Item):
     hashtag = scrapy.Field()
+    date = scrapy.Field()

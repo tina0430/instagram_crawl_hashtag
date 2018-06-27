@@ -93,3 +93,456 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
   (Session info: chrome=67.0.3396.87)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
 
+2018-06-27 13:32:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 68, in parse_insta
+    contents = con.find_element_by_xpath('span').text
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 653, in find_element
+    {"using": by, "value": value})['value']
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"span"}
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+
+2018-06-27 14:28:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 99, in parse_insta
+    contents = con.find_element_by_xpath('span').text
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 653, in find_element
+    {"using": by, "value": value})['value']
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"span"}
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+
+2018-06-27 14:29:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 99, in parse_insta
+    contents = con.find_element_by_xpath('span').text
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 653, in find_element
+    {"using": by, "value": value})['value']
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"span"}
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+
+2018-06-27 14:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.instagram.com/explore/tags/%EB%B9%84%EC%98%A8%EB%8B%A4%EA%B7%B8%EB%9E%A8/> (referer: None)
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python35\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\spiders\insta_spider.py", line 99, in parse_insta
+    contents = con.find_element_by_xpath('span').text
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 653, in find_element
+    {"using": by, "value": value})['value']
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "c:\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"span"}
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+
+2018-06-27 15:07:56 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '비',
+             'tag1': '날씨',
+             'tag10': '기록',
+             'tag11': '소통',
+             'tag12': '데일리',
+             'tag13': '취미',
+             'tag14': '창원',
+             'tag15': '진해',
+             'tag16': 'rain',
+             'tag17': 'watercolor',
+             'tag18': 'painting',
+             'tag19': 'drawing',
+             'tag2': '분위기',
+             'tag20': 'illustration',
+             'tag21': 'art',
+             'tag22': 'design',
+             'tag23': 'daily',
+             'tag24': 'idea',
+             'tag25': 'inspiration',
+             'tag26': 'instagood',
+             'tag3': '미술',
+             'tag4': '그림',
+             'tag5': '손그림',
+             'tag6': '취미미술',
+             'tag7': '수채화',
+             'tag8': '일러스트',
+             'tag9': '일상'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:07:57 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '딸',
+             'tag1': '멋쟁이',
+             'tag10': 'sunglasses',
+             'tag11': 'instababy',
+             'tag2': '장마',
+             'tag3': '썬글라스',
+             'tag4': '레드립스틱',
+             'tag5': '루즈알뤼르벨벳',
+             'tag6': '비',
+             'tag7': '육아',
+             'tag8': 'babygirl',
+             'tag9': 'makeup'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:07:58 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '대전',
+             'tag1': '하늘',
+             'tag2': '구름',
+             'tag3': '비',
+             'tag4': '덥다',
+             'tag5': 'sky',
+             'tag6': 'nofilter'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:07:59 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '주말',
+             'tag1': '장마',
+             'tag10': '여행스타그램',
+             'tag11': '여행에미치다',
+             'tag12': '여름',
+             'tag13': '종강',
+             'tag14': '칼퇴',
+             'tag15': '야근',
+             'tag16': '화이팅',
+             'tag17': '힘내',
+             'tag18': '직딩',
+             'tag19': '고딩',
+             'tag2': '주말',
+             'tag20': '데이트',
+             'tag21': '맑은하늘',
+             'tag22': '하늘색',
+             'tag23': '수채화',
+             'tag24': '감성',
+             'tag25': '감성사진',
+             'tag3': '비',
+             'tag4': '노을',
+             'tag5': '노을공원',
+             'tag6': 'sunset',
+             'tag7': '우산',
+             'tag8': '맑은하늘',
+             'tag9': '구름'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:01 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '러브꼭',
+             'tag1': '리틀페이지러브꼭',
+             'tag10': '수요일',
+             'tag11': '더워',
+             'tag12': '여름',
+             'tag13': '딸그램',
+             'tag14': '아들그램',
+             'tag15': '자매',
+             'tag16': '형제',
+             'tag17': '남매',
+             'tag18': '육아',
+             'tag19': '장마',
+             'tag2': '러브꼭키즈',
+             'tag20': '비',
+             'tag21': '해',
+             'tag22': '배고파',
+             'tag3': '피가로세트',
+             'tag4': '상하세트',
+             'tag5': '상하복',
+             'tag6': '나시상하',
+             'tag7': '소세지바지',
+             'tag8': '아동소세지바지',
+             'tag9': '스트라이프나시'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:02 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': 'wholesale',
+             'tag1': 'wrold',
+             'tag10': 'rain',
+             'tag11': 'rainday',
+             'tag12': 'theyun',
+             'tag13': '도매',
+             'tag14': '에이피엠',
+             'tag15': '여성복',
+             'tag16': '신상',
+             'tag17': '여름',
+             'tag18': '장바',
+             'tag19': '비',
+             'tag2': 'women',
+             'tag20': '장마철',
+             'tag21': '몽몽이',
+             'tag22': '강아지',
+             'tag23': '원피스',
+             'tag24': '스트릿',
+             'tag25': '인기',
+             'tag26': '더윤',
+             'tag3': 'sales',
+             'tag4': 'apm',
+             'tag5': 'streetfashion',
+             'tag6': 'new',
+             'tag7': 'summer',
+             'tag8': 'summerfashion',
+             'tag9': 'newarrivals'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:03 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '클레이아크미술관',
+             'tag1': '장마',
+             'tag2': '우산',
+             'tag3': '비',
+             'tag4': '웃으면',
+             'tag5': '비가와요~~~~~~~'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:04 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '일상',
+             'tag1': '맛스타그램',
+             'tag10': 'daily',
+             'tag11': 'ootd',
+             'tag12': 'like4like',
+             'tag13': '선팔',
+             'tag14': '맞팔',
+             'tag15': '부산맛집',
+             'tag16': '카페스타그램',
+             'tag17': '맛스타그램',
+             'tag18': '데일리',
+             'tag19': '카페투어',
+             'tag2': '맛집',
+             'tag20': '핫플레이스',
+             'tag21': '셀스타그램',
+             'tag22': '데일리',
+             'tag23': '여름',
+             'tag24': '미자다방',
+             'tag25': '토스트',
+             'tag26': '커피',
+             'tag27': '장마',
+             'tag28': '달다구리',
+             'tag29': '비',
+             'tag3': '부산',
+             'tag30': '녹차라떼',
+             'tag4': '광안리',
+             'tag5': '해운대',
+             'tag6': '동래',
+             'tag7': '동래맛집',
+             'tag8': '명장동',
+             'tag9': '온천천'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:06 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '선팔',
+             'tag1': '맞팔',
+             'tag10': '여행',
+             'tag11': '선물',
+             'tag12': 'ootd',
+             'tag13': '뷰티',
+             'tag14': '셀카',
+             'tag15': '인사채용',
+             'tag16': '첫줄',
+             'tag17': '간호사',
+             'tag18': '유치원',
+             'tag19': '군인',
+             'tag2': '선팔하면맞팔',
+             'tag20': '승무원',
+             'tag21': '운동',
+             'tag22': 'f4f',
+             'tag23': '소통',
+             'tag3': '재무설계',
+             'tag4': '자산관리',
+             'tag5': '팔로우',
+             'tag6': '좋아요',
+             'tag7': '다이렉트',
+             'tag8': '일상',
+             'tag9': 'daily'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
+2018-06-27 15:08:07 [scrapy.core.scraper] ERROR: Error processing {'date': <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")>,
+ 'hashtag': {'tag0': '비',
+             'tag1': '개',
+             'tag2': '셰틀랜드쉽독',
+             'tag3': '미니핀',
+             'tag4': '토이푸들',
+             'tag5': '포메라니안',
+             'tag6': '수성못',
+             'tag7': '하와이언'}}
+Traceback (most recent call last):
+  File "c:\python35\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\PycharmProjects\instagram_crawl_hashtag\instagram_crawl_hashtag\pipelines.py", line 45, in process_item
+    line = '\t"tag' + str(self.count) + '":' + json.dumps(dict(item), ensure_ascii=False) + ",\n"
+  File "c:\python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "c:\python35\lib\json\encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python35\lib\json\encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "c:\python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <selenium.webdriver.remote.webelement.WebElement (session="d160818f6b42a3125501aa5ba34e3e6d", element="0.6591358521425454-6")> is not JSON serializable
