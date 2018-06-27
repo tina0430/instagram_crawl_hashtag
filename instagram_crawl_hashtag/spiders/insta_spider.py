@@ -98,7 +98,7 @@ class HadhtagSpider(scrapy.Spider):
                     tags = re.findall('#[^#^ \s]+', contents)
 
                 if len(tags) != 0:
-                    item_count = 0
+                    item_count = 1
                     for tag in tags:
                         item_name = 'tag'+str(item_count)
                         item_[item_name] = tag.replace('#', '')
